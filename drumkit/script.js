@@ -15,27 +15,35 @@ function playSoundHandler(event) {
 
 	switch (event.key) {
 		case 'f':
+			angelDrum.currentTime = 0;
 			angelDrum.play();
 			break;
 		case 'd':
+			arcadeBonus.currentTime = 0;
 			arcadeBonus.play();
 			break;
 		case 's':
+			levelComplete.currentTime = 0;
 			levelComplete.play();
 			break;
 		case 'a':
+			playerLose.currentTime = 0;
 			playerLose.play();
 			break;
 		case 'j':
+			bonusAlert.currentTime = 0;
 			bonusAlert.play();
 			break;
 		case 'k':
+			drumImpact.currentTime = 0;
 			drumImpact.play();
 			break;
 		case 'l':
+			subBass.currentTime = 0;
 			subBass.play();
 			break;
 		case ';':
+			unlockGame.currentTime = 0;
 			unlockGame.play();
 			break;
 		default:
