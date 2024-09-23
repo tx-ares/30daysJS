@@ -1,5 +1,3 @@
-console.log('* TX-HYPERION ONLINE *');
-
 function addKeyListener() {
 	window.addEventListener('keydown', playSoundHandler);
 }
@@ -14,7 +12,6 @@ function playSoundHandler(event) {
 	const drumImpact = document.getElementById('drum-impact');
 	const subBass = document.getElementById('sub-bass');
 	const unlockGame = document.getElementById('unlock-game');
-	console.log(event)
 
 	switch (event.key) {
 		case 'f':
