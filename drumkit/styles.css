@@ -34,7 +34,7 @@ body {
 	align-items: center;
 	line-height: 3rem;
 	background: rgba(255, 255, 255, 0.8);
-	transition: all .5s ease;
+	transition: all .05s;
 	font-size: larger;
 }
 

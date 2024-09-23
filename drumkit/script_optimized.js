@@ -1,5 +1,9 @@
 function addKeyListener() {
 	window.addEventListener('keydown', playSoundHandler);
+	const keys = document.querySelectorAll('.key');
+	keys.forEach((key) =>
+		key.addEventListener('transitionend', removeTransition)
+	);
 }
 
 function playSoundHandler(e) {
@@ -11,9 +15,12 @@ function playSoundHandler(e) {
 	audio.currentTime = 0;
 	audio.play();
 	key.classList.add('playing');
-	setTimeout(() => {
-		key.classList.remove('playing');
-	}, 500);
+}
+
+function removeTransition(e) {
+	if (e.propertyName !== 'transform') return;
+	this.classList.remove('playing');
+	console.log(this)
 }
 
 addKeyListener();
