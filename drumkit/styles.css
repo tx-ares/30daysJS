@@ -1,15 +1,24 @@
 .view-container {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	height: 100vh;
 }
 
 .keys-container {
 	display: flex;
-	margin: auto;
-    height: 50px;
-    width: 100%;
+	align-items: center;
+	padding-bottom: 4rem;
+}
+
+.title-container > h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	border: 2px solid gold;
+	border-radius: 5px;
+	padding: 1rem;
+	background: rgba(255, 255, 255, 0.8);
 }
 
 .key {
@@ -17,16 +26,16 @@
 	height: 50px;
 	width: 50px;
 	text-align: center;
-	cursor: pointer;
 	border: 2px solid gold;
 	border-radius: 5px;
 	align-items: center;
 	line-height: 3rem;
+	background: rgba(255, 255, 255, 0.8);
 }
 
 body {
 	background-color: black;
-	background-image: url(firelink.gif);
+	background-image: url(racetrack.gif);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0px -9%;
