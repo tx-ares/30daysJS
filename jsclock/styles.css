@@ -1,5 +1,5 @@
 body {
-	background-image: url(images/nate-rayfield-_WR6tUIAJe8-unsplash.jpg);
+	background-image: url(images/wp3427116-mass-effect-space-wallpaper.jpg);
 	background-size: cover;
 }
 
@@ -11,12 +11,13 @@ body {
 	position: absolute;
 	top: 30%;
 	left: 40%;
+    background: radial-gradient(black, transparent);
 }
 
 .hand {
 	width: 50%;
 	height: 6px;
-	background-color: black;
+	background-color: white;
 	position: absolute;
 	top: 50%;
 	transform-origin: 100%;
