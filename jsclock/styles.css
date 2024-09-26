@@ -1,4 +1,26 @@
 body {
-    background-image: url(images/nate-rayfield-_WR6tUIAJe8-unsplash.jpg);
-    background-size: cover;
+	background-image: url(images/nate-rayfield-_WR6tUIAJe8-unsplash.jpg);
+	background-size: cover;
+}
+
+.clock {
+	border: 10px solid white;
+	border-radius: 170px;
+	height: 300px;
+	width: 300px;
+	position: absolute;
+	top: 30%;
+	left: 40%;
+}
+
+.hand {
+	width: 50%;
+	height: 6px;
+	background-color: black;
+	position: absolute;
+	top: 50%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+	transition: all 0.1s;
+	transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
